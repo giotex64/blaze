@@ -14,8 +14,8 @@ services:
       context: .
       dockerfile: ./client/Dockerfile
     ports:
-      - 80:80
+      - 854:80
     depends_on:
       - blaze-server
     volumes:
-      - ./nginx/compose-nginx.conf:/etc/nginx/nginx.conf
+      - /DATA/AppData/Blaze:/etc/nginx/nginx.conf
